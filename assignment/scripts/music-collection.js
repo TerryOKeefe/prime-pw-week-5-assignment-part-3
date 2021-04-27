@@ -37,3 +37,14 @@ console.log('Add album', addToCollection('Epiphany', 'T-Pain', 2007, collection)
 
 // console log the collection array
 console.log(collection);
+
+// Add a function named showCollection
+function showCollection( array ) { // start showCollection
+  console.log('Number of albums:', array.length);
+  for (let i = 0; i < array.length; i++) { // loop to find values in array
+    console.log(array[i].Title, 'by', array[i].Artist);
+  }
+  return array; // end showCollection
+}
+
+showCollection(collection);
