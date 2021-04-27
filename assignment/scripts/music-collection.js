@@ -42,7 +42,7 @@ console.log(collection);
 function showCollection( array ) { // start showCollection
   console.log('Number of albums:', array.length);
   for (let i = 0; i < array.length; i++) { // loop to find values in array
-    console.log(array[i].Title, 'by', array[i].Artist);
+    console.log(array[i].Title, 'by', array[i].Artist, `published in ${array[i].YearPublished}`);
   }
   return array; // end showCollection
 }
