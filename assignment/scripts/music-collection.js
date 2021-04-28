@@ -46,8 +46,8 @@ function showCollection( array ) { // start showCollection
   for (let i = 0; i < array.length; i++) { // loop to find values in array
     console.log(array[i].Title, 'by', array[i].Artist, `published in ${array[i].YearPublished}`);
   }
-  return array; // end showCollection
-}
+  return array;
+}// end showCollection
 
 // test the showCollection function
 // not sure which one is wanted to show the test so I'll do both
@@ -74,10 +74,21 @@ function findByArtist( array, artist ) {
 } // end findByArtist function
 
 // check if the function works in the beginning of the array
-console.log('Test - Should show T-Pain array', findByArtist(collection, 'T-Pain'));
+console.log('Test - Should find T-Pain array', findByArtist(collection, 'T-Pain'));
 // check if the function works at the end of the array
-console.log('Test- Should show The Used array', findByArtist(collection, 'The Used'));
+console.log('Test- Should find The Used array', findByArtist(collection, 'The Used'));
 //check if the function can pull 1 or more of same artist
-console.log('Test - Should show 2 The Maine arrays', findByArtist(collection, 'The Maine'));
+console.log('Test - Should find 2 The Maine arrays', findByArtist(collection, 'The Maine'));
 //check if the function returns empty if no match
 console.log('Test - Should show empty array', findByArtist(collection, 'Rolling Stones'));
+
+// Start Stretch Goals
+console.log('** Stretch Goals**');
+
+// Create a function called search
+function search( title, artist, yearPublished, array ) {
+  const searchArr = [];
+  for (let i = 0; i < array.length; i++) {
+
+  }
+}
