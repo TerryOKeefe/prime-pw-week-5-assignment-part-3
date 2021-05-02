@@ -15,7 +15,7 @@ function addToCollection( title, artist, yearPublished, array){
   return album;
 }
 
-console.log('1.) - Add a addToCollection Function and Test');
+console.log('1.) - Add an addToCollection Function and Test');
 // Add 6 Albums to test function
 
 // Album 1
@@ -51,7 +51,7 @@ function showCollection( array ) { // start showCollection
 
 // test the showCollection function
 // not sure which one is wanted to show the test so I'll do both
-showCollection(collection);
+showCollection(collection); // should show new format in console
 console.log('2a.) - Alternate Test to showCollection');
 console.log('Test - Should show collection:', showCollection(collection));
 
@@ -86,9 +86,14 @@ console.log('Test - Should show empty array', findByArtist(collection, 'Rolling 
 console.log('** Stretch Goals**');
 
 // Create a function called search
-function search( title, artist, yearPublished, array ) {
+function search( title, artist, yearPublished, array ) { // just throwing ideas out to start
   const searchArr = [];
   for (let i = 0; i < array.length; i++) {
-
+    if (title === array[i].Title) { 
+      searchArr.push(array[i].Title)
+    }
   }
+  return searchArr;
 }
+
+console.log(search('Epiphany', collection));
